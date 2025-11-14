@@ -1,0 +1,104 @@
+/* css/_responsive.css */
+/* 5 Breakpoints (Mobile-first) */
+
+/* 1. Mobile Pequeno (Até 479px) - É o padrão, não precisa de media query */
+
+
+/* 2. Mobile Grande (480px e acima) */
+@media (min-width: 480px) {
+    /* (Ajustes finos se necessário) */
+    :root {
+        /* Pode aumentar a fonte base levemente */
+        --texto-base-size: 17px;
+    }
+}
+
+
+/* 3. Tablet (768px e acima) */
+@media (min-width: 768px) {
+    :root {
+        --texto-base-size: 18px;
+    }
+
+    /* --- NAVEGAÇÃO TABLET --- */
+    /* Esconde o botão hambúrguer */
+    .menu-hamburguer-btn {
+        display: none;
+    }
+    /* Mostra o menu normal */
+    .nav-principal {
+        display: flex;
+    }
+
+    /* --- GRID TABLET --- */
+    .col-tablet-4 { grid-column: span 4; }
+    .col-tablet-6 { grid-column: span 6; }
+    .col-tablet-8 { grid-column: span 8; }
+    .col-tablet-12 { grid-column: span 12; }
+}
+
+
+/* 4. Desktop Pequeno (1024px e acima) */
+@media (min-width: 1024px) {
+    /* --- GRID DESKTOP --- */
+    .col-desktop-3 { grid-column: span 3; }
+    .col-desktop-4 { grid-column: span 4; }
+    .col-desktop-6 { grid-column: span 6; }
+    .col-desktop-8 { grid-column: span 8; }
+}
+
+
+/* 5. Desktop Grande (1200px e acima) */
+@media (min-width: 1200px) {
+    /* (Estilos para telas bem largas, se necessário) */
+}
+
+
+/* REGRAS PARA MOBILE (ABAIXO DE 767px)
+   Usamos 'max-width' aqui especificamente para o menu.
+*/
+@media (max-width: 767px) {
+    
+    /* Mostra o botão hambúrguer */
+    .menu-hamburguer-btn {
+        display: block;
+    }
+    
+    /* Esconde o menu principal */
+    .nav-principal {
+        display: none; 
+        
+        /* Estilos do menu mobile (tela cheia) */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--cor-primaria);
+        
+        /* Ajusta o flexbox para mobile */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    /* Classe que o JS vai adicionar */
+    .nav-principal.ativo {
+        display: flex; 
+    }
+
+    .nav-principal li {
+        margin: var(--spacing-3x) 0;
+    }
+    
+    .nav-principal a {
+        color: var(--cor-neutra-01);
+        font-size: var(--h2-size);
+    }
+    
+    /* Esconde o dropdown no mobile */
+    .submenu {
+        display: none !important;
+    }
+}

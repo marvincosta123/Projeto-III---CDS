@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "titulo": "Projeto Educação para Todos",
+        "img": "imagens/banner-projetos.jpg",
+        "descricao": "Descrição do projeto, focado em levar educação de qualidade para comunidades carentes."
+    },
+    {
+        "id": 2,
+        "titulo": "Projeto Cozinha Comunitária",
+        "img": "imagens/icone-doar.png",
+        "descricao": "Descrição do projeto, focado em segurança alimentar e distribuição de refeições."
+    },
+    {
+        "id": 3,
+        "titulo": "Voluntariado e Impacto",
+        "img": "imagens/icone-voluntario.png",
+        "descricao": "Nosso programa de voluntariado que conecta pessoas a causas."
+    }
+]

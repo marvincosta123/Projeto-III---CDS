@@ -1,0 +1,64 @@
+/* css/_layout.css */
+
+/* 1. Leiaute Principal com CSS Grid */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background: var(--cor-neutra-01);
+    border-bottom: 1px solid var(--cor-neutra-02);
+    padding: var(--spacing-2x) 0;
+}
+
+main {
+    padding: var(--spacing-6x) 0;
+    width: 100%;
+}
+
+footer {
+    background: var(--cor-neutra-04);
+    color: var(--cor-neutra-02);
+    padding: var(--spacing-4x) 0;
+    text-align: center;
+}
+
+/* 2. Container centralizado */
+.container {
+    max-width: var(--max-width);
+    width: 90%; /* Responsividade básica */
+    margin: 0 auto;
+}
+
+/* Container do Header (Usa Flexbox para alinhar logo e nav) */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 3. Sistema de Grid Customizado (12 colunas) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-3x);
+}
+
+/* Classes de utilidade para colunas (Mobile-first: por padrão, 12 colunas) */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }

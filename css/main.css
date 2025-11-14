@@ -1,0 +1,23 @@
+/* css/main.css */
+/* Este arquivo 'chama' todos os outros na ordem correta */
+
+/* 1. Reset (Opcional, mas recomendado) */
+@import url('_reset.css'); 
+
+/* 2. Variáveis (O "Design System") */
+@import url('_variables.css');
+
+/* 3. Layout (Grid, container, header, footer) */
+@import url('_layout.css');
+
+/* 4. Navegação (Menu principal, dropdown, mobile) */
+@import url('_navigation.css');
+
+/* 5. Componentes (Botões, cards, badges, alerts) */
+@import url('_components.css');
+
+/* 6. Formulários (Estilos e validação) */
+@import url('_forms.css');
+
+/* 7. Responsivo (Media queries - DEVE SER O ÚLTIMO) */
+@import url('_responsive.css');
