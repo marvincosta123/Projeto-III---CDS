@@ -1,7 +1,7 @@
 /* css/main.css */
 /* Este arquivo 'chama' todos os outros na ordem correta */
 
-/* 1. Reset (Opcional, mas recomendado) */
+/* 1. Reset */
 @import url('_reset.css'); 
 
 /* 2. Variáveis (O "Design System") */
