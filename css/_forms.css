@@ -1,65 +1,48 @@
 /* css/_forms.css */
-
 form {
     display: grid;
     gap: var(--spacing-3x);
 }
-
 fieldset {
     border: 1px solid var(--cor-neutra-03);
     border-radius: var(--border-radius);
     padding: var(--spacing-4x);
 }
-
 legend {
     font-size: var(--h3-size);
     font-weight: 700;
     padding: 0 var(--spacing-1x);
     color: var(--cor-primaria);
 }
-
 .form-grupo {
     display: flex;
     flex-direction: column;
-    position: relative; /* Para a mensagem de erro */
+    position: relative;
 }
-
 .form-grupo label {
     font-weight: 700;
     margin-bottom: var(--spacing-1x);
 }
-
 .form-grupo input {
     padding: var(--spacing-2x);
     border: 1px solid var(--cor-neutra-03);
     border-radius: var(--border-radius);
     font-size: var(--p-size);
 }
-
 .form-grupo input:focus {
     border-color: var(--cor-primaria);
     outline: 2px solid var(--cor-primaria);
-    outline-offset: -1px;
 }
-
-/* ESTILOS DE VALIDAÇÃO (DA ENTREGA III)
-*/
-
-/* Mensagem de erro */
 .error-message {
     color: var(--cor-erro); 
     font-size: var(--small-size);
     margin-top: 4px;
-    min-height: 1.2em; /* Evita que o layout "pule" */
+    min-height: 1.2em;
 }
-
-/* Input inválido (quando o JS adiciona a classe) */
 .form-grupo input.invalid {
     border-color: var(--cor-erro);
     background-color: #FFF8F8; 
 }
-
-/* Foco em input inválido */
 .form-grupo input.invalid:focus {
     border-color: var(--cor-erro);
     outline: 2px solid var(--cor-erro);
