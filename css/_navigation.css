@@ -1,34 +1,26 @@
 /* css/_navigation.css */
-
-/* Menu Principal (Desktop) */
 .nav-principal ul {
     list-style: none;
-    display: flex; /* Flexbox para alinhar itens do menu */
+    display: flex;
     margin: 0;
     padding: 0;
 }
-
 .nav-principal li {
-    position: relative; /* Essencial para o dropdown */
+    position: relative;
     margin-left: var(--spacing-3x);
 }
-
 .nav-principal a {
-    text-decoration: none;
     color: var(--cor-neutra-04);
     font-weight: 700;
     padding: var(--spacing-1x) var(--spacing-2x);
     border-radius: var(--border-radius);
     transition: background-color 0.3s ease;
 }
-
 .nav-principal a:hover,
 .nav-principal a:focus {
     background-color: var(--cor-neutra-02);
     color: var(--cor-primaria);
 }
-
-/* Submenu Dropdown (Escondido por padrão) */
 .submenu {
     display: none;
     position: absolute;
@@ -39,30 +31,24 @@
     min-width: 200px;
     z-index: 10;
 }
-
-/* Exibe o dropdown no hover do item PAI */
 .nav-principal li:hover > .submenu {
     display: block;
 }
-
 .submenu li {
     margin: 0;
     width: 100%;
 }
-
 .submenu a {
     display: block;
     width: 100%;
     padding: var(--spacing-2x);
 }
-
-/* Menu Hambúrguer (Mobile) - Escondido no desktop */
 .menu-hamburguer-btn {
-    display: none; /* Será exibido no _responsive.css */
+    display: none;
     background: none;
     border: none;
     font-size: var(--h2-size);
     cursor: pointer;
     color: var(--cor-primaria);
-    z-index: 1001; /* Fica acima do menu mobile */
+    z-index: 1001;
 }
