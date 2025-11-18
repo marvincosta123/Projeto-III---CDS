@@ -1,34 +1,29 @@
 /* css/_variables.css */
-
 :root {
-    /* 1. Paleta de Cores (Exemplo com 9 cores) */
+    /* Paleta de Cores */
     --cor-primaria: #005A9C;
     --cor-primaria-dark: #003D6B;
     --cor-secundaria: #FFC107;
     --cor-secundaria-light: #FFD54F;
-    
     --cor-sucesso: #4CAF50;
     --cor-erro: #D32F2F;
     --cor-aviso: #FFA000;
+    --cor-neutra-01: #FFFFFF;
+    --cor-neutra-02: #F5F5F5;
+    --cor-neutra-03: #9E9E9E;
+    --cor-neutra-04: #212121;
 
-    --cor-neutra-01: #FFFFFF; /* Fundo */
-    --cor-neutra-02: #F5F5F5; /* Fundo sutil */
-    --cor-neutra-03: #9E9E9E; /* Texto/Bordas */
-    --cor-neutra-04: #212121; /* Títulos/Texto */
-
-    /* 2. Tipografia */
-    --fonte-principal: 'Roboto', sans-serif; /* (Lembre de importar no HTML) */
+    /* Tipografia */
+    --fonte-principal: 'Roboto', sans-serif;
     --texto-base-size: 16px;
-    
-    /* Hierarquia de fontes (6 tamanhos) */
-    --h1-size: 3.052rem;  /* ~49px */
-    --h2-size: 2.441rem;  /* ~39px */
-    --h3-size: 1.953rem;  /* ~31px */
-    --h4-size: 1.563rem;  /* ~25px */
-    --p-size: 1rem;       /* 16px (base) */
-    --small-size: 0.8rem; /* ~13px */
+    --h1-size: 3.052rem;
+    --h2-size: 2.441rem;
+    --h3-size: 1.953rem;
+    --h4-size: 1.563rem;
+    --p-size: 1rem;
+    --small-size: 0.8rem;
 
-    /* 3. Sistema de Espaçamento Modular (Base 8px) */
+    /* Espaçamento Modular */
     --spacing-1x: 8px;
     --spacing-2x: 16px;
     --spacing-3x: 24px;
@@ -38,10 +33,9 @@
 
     /* Outros */
     --border-radius: 4px;
-    --max-width: 1200px; /* Largura máxima do container */
+    --max-width: 1200px;
 }
 
-/* Estilos de base aplicados ao body */
 body {
     font-family: var(--fonte-principal);
     font-size: var(--texto-base-size);
@@ -50,7 +44,6 @@ body {
     line-height: 1.6;
 }
 
-/* Estilos de base para títulos */
 h1, h2, h3, h4 {
     margin-bottom: var(--spacing-2x);
     font-weight: 700;
