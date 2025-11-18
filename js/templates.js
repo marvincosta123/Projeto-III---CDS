@@ -1,11 +1,10 @@
 // js/templates.js
 
-// Esta é nossa "template engine"
 // Recebe um objeto 'projeto' e retorna o HTML do card
 export function renderProjetoCard(projeto) {
-    // Adapte as classes (col-desktop-4, etc.) para seu grid da Entrega II
+    // Adapte as classes (col-desktop-4) para seu grid
     return `
-        <div class="card col-desktop-4 col-tablet-6">
+        <div class="card col-12 col-tablet-6 col-desktop-4">
             <div class="card-imagem">
                 <img src="${projeto.img}" alt="${projeto.titulo}">
             </div>
