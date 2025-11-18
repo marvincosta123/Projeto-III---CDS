@@ -1,6 +1,4 @@
 /* css/_reset.css */
-
-/* Remove margens, paddings e define o box-sizing */
 *,
 *::before,
 *::after {
@@ -8,26 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Remove estilos de lista */
 ul, ol {
     list-style: none;
 }
-
-/* Remove estilos de link padrão */
 a {
     text-decoration: none;
     color: inherit;
 }
-
-/* Garante que imagens sejam responsivas */
-img, video, canvas, svg {
+img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-/* Herda a fonte em botões e inputs */
 button,
 input,
 textarea,
